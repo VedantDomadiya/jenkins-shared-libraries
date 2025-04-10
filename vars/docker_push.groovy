@@ -8,6 +8,6 @@ def call(String ImageName, String ImageTag, String DockerHubUser){
                         sh "docker tag krishnaaicicd_krishna-ai:latest ${DockerHubUser}/krishna-ai:latest"
 
                         echo "Pushing the Docker image to Docker Hub"
-                        sh "docker push ${DockerHubUser}/${ImageName}:$(ImageTag)"
+                        sh "docker push ${DockerHubUser}/krishna-ai:latest"
                     }
 }
